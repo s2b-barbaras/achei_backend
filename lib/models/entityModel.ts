@@ -2,11 +2,6 @@ import * as mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-const campoDinamico = new Schema({
-    label: String,
-    valor: Schema.Types.Mixed
-});
-
 export const EntitySchema = new Schema({
     nome: String,
     localizacao: {
@@ -15,7 +10,7 @@ export const EntitySchema = new Schema({
     },
     descricao: String,
     tipo: String,
-    camposDinamicos: [ campoDinamico ],
+    camposDinamicos: [ Schema.Types.Mixed ],
     keywords: [ String ],
     created_date: {
         type: Date,
