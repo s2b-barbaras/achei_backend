@@ -21,9 +21,16 @@ class App {
         this.app.use(bodyParser.json());
         //support application/x-www-form-urlencoded post data
         this.app.use(bodyParser.urlencoded({ extended: false }));
+        this.app.use((req, res, next) => {
+            res.append('Access-Control-Allow-Origin', '*');
+            res.append('Access-Control-Allow-Methods', ['GET', 'OPTIONS', 'PUT', 'POST']);
+            res.append('Access-Control-Allow-Headers',
+                'Origin, X-Requested-With, Content-Type, Accept');
+            next();
+        });
     }
     private mongoSetup(): void{
-        mongoose.Promise = global.Promise;
+        (<any>mongoose).Promise = global.Promise;
         mongoose.connect(this.mongoUrl);    
     }
 }
