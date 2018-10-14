@@ -12,7 +12,10 @@
     "mongoose": "^5.3.3",
     "nodemon": "^1.18.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/mongodb": "^3.1.12",
+    "@types/mongoose": "^5.2.19"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "ts-node ./lib/server.ts",
