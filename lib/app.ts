@@ -1,11 +1,11 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import { Routes } from "./routes/crmRoutes";
+import { Routes } from "./routes/Routes";
 import * as mongoose from "mongoose";
 
 class App {
     
-    public mongoUrl: string = 'mongodb://localhost/CRMdb';  
+    public mongoUrl: string = 'mongodb://localhost/acheiDB';  
     public app: express.Application;
     public routePrv: Routes = new Routes();
 

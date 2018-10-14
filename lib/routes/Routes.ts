@@ -1,4 +1,4 @@
-import { entityController } from "../controllers/crmController";
+import { entityController } from "../controllers/Controller";
 
 export class Routes {    
     public entityController: entityController = new entityController();

@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { EntitySchema } from '../models/crmModel';
+import { EntitySchema } from '../models/entityModel';
 import { Request, Response } from 'express';
 
 const Entity = mongoose.model('Entity', EntitySchema);
@@ -15,7 +15,14 @@ export class entityController {
         })
     }
     public listarEntidadesByTipo (req: Request, res: Response) {
-        Entity.find({}, )
+        const tipoParam = req.params.tipo;
+        Entity.find({tipo: tipoParam}, (err, entity) => {
+            if(err) {
+                res.send(err);
+            } else {
+                res.json(entity);
+            }
+        })
     }
     public removerEntidade (req: Request, res: Response) {           
         Entity.remove({ _id: req.params.contactId }, (err, contact) => {
@@ -34,7 +41,7 @@ export class entityController {
         });
     }
     public atualizarEntidade (req: Request, res: Response) {           
-        Entity.findOneAndUpdate({ _id: req.params.contactId }, req.body, { new: true }, (err, contact) => {
+        Entity.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, contact) => {
             if(err){
                 res.send(err);
             }

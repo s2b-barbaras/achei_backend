@@ -3,13 +3,14 @@ import * as mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 export const EntitySchema = new Schema({
+    nome: String,
     localizacao: {
-        latitude: number,
-        longitude: number
+        latitude: Number,
+        longitude: Number
     },
     descricao: String,
     tipo: String,
-    camposDinamicos [
+    camposDinamicos: [
         {
             label: String,
             valor: any
