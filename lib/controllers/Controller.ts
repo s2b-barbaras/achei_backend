@@ -25,11 +25,11 @@ export class entityController {
         })
     }
     public removerEntidade (req: Request, res: Response) {           
-        Entity.remove({ _id: req.params.contactId }, (err, contact) => {
+        Entity.remove({ _id: req.params.contactId }, (err) => {
             if(err){
                 res.send(err);
             }
-            res.json({ message: 'Successfully deleted contact!'});
+            res.json({ message: 'Successfully deleted contact!' });
         });
     }
     public buscarEntidadeById (req: Request, res: Response) {           
