@@ -3,8 +3,8 @@ Aplicação com o intuito de informar locais de diferentes utilidades em Porto A
 
 ## Uso
 ``
-npm install
-npm run dev
+npm install ``
+`` npm run dev
 ``
 
 ## EndPoints Disponíveis
