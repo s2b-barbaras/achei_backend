@@ -55,8 +55,8 @@ npm run dev
 ## Licença
 Esse projeto foi licenciado sob a licença do MIT - veja [aqui](https://github.com/s2b-barbaras/achei_backend/blob/master/LICENSE) para mais detalhes.
 ## Contato
-![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=275&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
-#### Bárbara Anger
+<div style="float:right">![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=275&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)</div>
+#### Bárbara Anger 
 Desenvolvedora web. Entre em contato:
 - [facebook](fb.com/BarbaraAngerr)
 - [instagram](instagram.com/barbaraangerr)
