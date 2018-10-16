@@ -9,7 +9,7 @@ npm run dev
 
 ## EndPoints Disponíveis
 
-- GET listarEntidadesByTipo - /entidades/:tipo
+-  listarEntidadesByTipo - /entidades/:tipo
 - GET buscarEntidadeById - /entidade/:id
 - POST salvarEntidade - /entidade
 - DELETE removerEntidade - /entidade/:id
@@ -17,7 +17,8 @@ npm run dev
 
 | URL                                     | Description            | Return                      | Parameters                       |
 |:---------------------------------------:|:----------------------:|:---------------------------:|:--------------------------------:|
-| GET /entidades | Buscar todas entidades | {place: place, token: token}| {localizacao: {latitude: "",longitude:""}, decricao: "", tipo: "" }        |
+| GET /places | Buscar todas localidades  |                        | {localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" }|
+| GET /places/:tipo                       |                                                     |{localizacao:{latitude:"",longitude:""},descricao:""
 
 ## Estrutura de uma entidade
 ```
