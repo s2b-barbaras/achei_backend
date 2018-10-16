@@ -1,5 +1,15 @@
 # Achei - BackEnd
 Aplicação com o intuito de informar locais de diferentes utilidades em Porto Alegre com a finalidade de auxiliar àqueles que necessitam de determinado serviço, feita para o projeto do S2B.
+## Recursos
+- NodeJS
+  * TypeScript
+  * NPM
+- MongoDB
+- Json
+- Datapoa
+- GitHub
+  * Kanban
+  * Versionamento
 
 ## Uso
 ```
@@ -19,7 +29,7 @@ npm run dev
 | DELETE /place/:id                       | Deletar localidade         |                             |
 | PUT /entidade                           | Atualizar localidade       |                             |
 
-## Estrutura de uma entidade
+## Estrutura de uma localidade
 ```
 {
   localizacao: {
@@ -28,11 +38,25 @@ npm run dev
   },
   descricao: string,
   tipo: string,
-  camposDinamicos: [ { label: string, valor: any }, {}, {}],
-  keywords: [ 'pago' ]
+  camposDinamicos: [ { Schema.Types.Mixed }, {}, {}],
+  keywords: [ String ],
+  created_date: {
+  type: Date,
+  default: Date.now
+  }
 }
 ```
 ## Melhorias
 
-- Expandir para outros domínios de utilidade (cinemas, postos de gasolina, etc)
-- Limitar a quantidade que vem da lista, através de um parâmetro de raio de localização
+- Expandir para outros domínios de utilidade (cinemas, postos de gasolina, etc);
+- Limitar a quantidade que vem da lista, através de um parâmetro de raio de localização;
+- Rotas e Direções;
+- Adicionar campos com descrições dos lugares no modal detalhes.
+
+## Contato
+![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=400&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
+#### Bárbara Anger
+Desenvolvedora web. Entre em contato:
+- (facebook)[fb.com/BarbaraAngerr]
+- (instagram)[barbaraangerr/]
+- Skype: Barbara Anger
