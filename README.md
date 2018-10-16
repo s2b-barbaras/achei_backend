@@ -9,16 +9,15 @@ npm install ``
 
 ## EndPoints Disponíveis
 
--  - /entidades
 - GET listarEntidadesByTipo - /entidades/:tipo
 - GET buscarEntidadeById - /entidade/:id
 - POST salvarEntidade - /entidade
 - DELETE removerEntidade - /entidade/:id
 - PUT atualizarEntidade - /entidade
 
-| URL                             | Description            | Return                     | Parameters                       |
-|:-------------------------------:|:----------------------:|:--------------------------:|:--------------------------------:|
-| GET buscarTodasEntidades        | Buscar todas entidades | {place: place, token: token} | {localizacao: {latitude: "",longitude:""}, decricao: "", tipo: "" }        |
+| URL                                 | Description            | Return                      | Parameters                       |
+|:-----------------------------------:|:----------------------:|:---------------------------:|:--------------------------------:|
+| GET buscarTodasEntidades /entidades | Buscar todas entidades | {place: place, token: token}| {localizacao: {latitude: "",longitude:""}, decricao: "", tipo: "" }        |
 
 ## Estrutura de uma entidade
 ```
