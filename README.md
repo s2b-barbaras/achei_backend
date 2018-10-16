@@ -57,6 +57,7 @@ npm run dev
 ![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=400&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
 #### Bárbara Anger
 Desenvolvedora web. Entre em contato:
-- (facebook)[fb.com/BarbaraAngerr]
-- (instagram)[barbaraangerr/]
+- [facebook](fb.com/BarbaraAngerr)
+- [instagram](instagram.com/barbaraangerr)
 - Skype: Barbara Anger
+- E-mail: [barbaraanger@hotmail.com](barbaraanger@hotmail.com)
