@@ -9,17 +9,19 @@ npm run dev
 
 ## EndPoints Disponíveis
 
-
-- GET buscarEntidadeById - /entidade/:id
 - POST salvarEntidade - /entidade
 - DELETE removerEntidade - /entidade/:id
 - PUT atualizarEntidade - /entidade
 
-| URL                                     | Description            | Return                      | Parameters                       |
-|:---------------------------------------:|:----------------------:|:---------------------------:|:--------------------------------:|
-| GET /places | Buscar todas localidades  |                        | {localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" }|
-| GET /places/:tipo                       | Listar lugares por tipo |                             |{localizacao:{latitude:"",longitude:""},descricao:""}
-| GET /places/:id                         | Detalhamento de localidade |                      |
+| URL                                     | Description                | Return                      | Parameters                     |
+|:---------------------------------------:|:--------------------------:|:---------------------------:|:--------------------------------:|
+| GET /places | Buscar todas localidades  |                            | {localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" }|
+| GET /places/:tipo                       | Listar lugares por tipo    |                             |{localizacao:{latitude:"",longitude:""},descricao:""}
+| GET /places/:id                         | Detalhamento de localidade |                             |
+| POST /place                             | Salvar localidade          |                             |
+| DELETE /place/:id                       | Deletar localidade         |                             |
+| PUT /entidade                           | Atualizar localidade       |                             |
+
 ## Estrutura de uma entidade
 ```
 {
