@@ -6,12 +6,9 @@ Aplicação com o intuito de informar locais de diferentes utilidades em Porto A
 npm install
 npm run dev
 ```
+* Entre em ``localhost:3000`` para uso.
 
 ## EndPoints Disponíveis
-
-- POST salvarEntidade - /entidade
-- DELETE removerEntidade - /entidade/:id
-- PUT atualizarEntidade - /entidade
 
 | URL                                     | Description                | Return                      | Parameters                     |
 |:---------------------------------------:|:--------------------------:|:---------------------------:|:--------------------------------:|
