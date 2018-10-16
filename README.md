@@ -18,7 +18,7 @@ npm run dev
 
 | URL                             | Description            | Return                     | Parameters                       |
 |:-------------------------------:|:----------------------:|:--------------------------:|:--------------------------------:|
-| GET buscarTodasEntidades        | Buscar todas entidades | {place: place, token: token} | {localizacao: {latitude: "",longitude:""} }        |
+| GET buscarTodasEntidades        | Buscar todas entidades | {place: place, token: token} | {localizacao: {latitude: "",longitude:""}, decricao: "", tipo: "" }        |
 
 ## Estrutura de uma entidade
 ```
