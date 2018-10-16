@@ -1,56 +1,56 @@
 import * as mongoose from 'mongoose';
-import { EntitySchema } from '../models/entityModel';
+import { PlaceSchema } from '../models/placeModel';
 import { Request, Response } from 'express';
 
-const Entity = mongoose.model('Entity', EntitySchema);
+const Place = mongoose.model('Place', PlaceSchema);
 
-export class entityController {
-    public buscarTodasEntidades (req: Request, res: Response) {
-        Entity.find({}, (err, entity) => {
+export class PlaceController {
+    public getAllPlaces (req: Request, res: Response) {
+        Place.find({}, (err, place) => {
             if(err) {
                 res.send(err);
             } else {
-                res.json(entity);
+                res.json(place);
             }
         })
     }
-    public listarEntidadesByTipo (req: Request, res: Response) {
+    public listPlacesByType (req: Request, res: Response) {
         const tipoParam = req.params.tipo;
-        Entity.find({tipo: tipoParam}, (err, entity) => {
+        Place.find({tipo: tipoParam}, (err, place) => {
             if(err) {
                 res.send(err);
             } else {
-                res.json(entity);
+                res.json(place);
             }
         })
     }
-    public removerEntidade (req: Request, res: Response) {           
-        Entity.remove({ _id: req.params.contactId }, (err) => {
+    public deletePlace (req: Request, res: Response) {           
+        Place.remove({ _id: req.params.contactId }, (err) => {
             if(err){
                 res.send(err);
             }
             res.json({ message: 'Successfully deleted contact!' });
         });
     }
-    public buscarEntidadeById (req: Request, res: Response) {           
-        Entity.findById(req.params.EntityId, (err, contact) => {
+    public getPlaceById (req: Request, res: Response) {           
+        Place.findById(req.params.placeId, (err, contact) => {
             if(err){
                 res.send(err);
             }
             res.json(contact);
         });
     }
-    public atualizarEntidade (req: Request, res: Response) {           
-        Entity.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, contact) => {
+    public updatePlace (req: Request, res: Response) {           
+        Place.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, contact) => {
             if(err){
                 res.send(err);
             }
             res.json(contact);
         });
     }
-    public salvarEntidade (req: Request, res: Response) {                
-        let newEntity = new Entity(req.body);
-        newEntity.save((err, contact) => {
+    public savePlace (req: Request, res: Response) {                
+        let newPlace = new Place(req.body);
+        newPlace.save((err, contact) => {
             if(err){
                 res.send(err);
             }    

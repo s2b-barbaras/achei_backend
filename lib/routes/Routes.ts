@@ -1,21 +1,21 @@
-import { entityController } from "../controllers/Controller";
+import { PlaceController } from "../controllers/Controller";
 
 export class Routes {    
-    public entityController: entityController = new entityController();
+    public placeController: PlaceController = new PlaceController();
         
     public routes(app): void {  
-        app.route('/entidades')
-         .get(this.entityController.buscarTodasEntidades)
+        app.route('/places')
+         .get(this.placeController.getAllPlaces)
 
-         app.route('/entidades/:tipo')
-         .get(this.entityController.listarEntidadesByTipo)
+         app.route('/places/:tipo')
+         .get(this.placeController.listPlacesByType)
          
-         app.route('/entidade/:id')
-         .get(this.entityController.buscarEntidadeById)
-         .delete(this.entityController.removerEntidade)
+         app.route('/place/:placeId')
+         .get(this.placeController.getPlaceById)
+         .delete(this.placeController.deletePlace)
 
-         app.route('/entidade')
-         .post(this.entityController.salvarEntidade) 
-         .put(this.entityController.atualizarEntidade)
+         app.route('/place')
+         .post(this.placeController.savePlace) 
+         .put(this.placeController.updatePlace)
     }
 }

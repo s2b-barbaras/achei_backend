@@ -2,7 +2,7 @@ import * as mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-export const EntitySchema = new Schema({
+export const PlaceSchema = new Schema({
     nome: String,
     localizacao: {
         latitude: Number,
