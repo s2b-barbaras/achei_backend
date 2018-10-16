@@ -18,7 +18,7 @@ npm run dev
 | URL                                     | Description            | Return                      | Parameters                       |
 |:---------------------------------------:|:----------------------:|:---------------------------:|:--------------------------------:|
 | GET /places | Buscar todas localidades  |                        | {localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" }|
-| GET /places/:tipo                       |                                                     |{localizacao:{latitude:"",longitude:""},descricao:""
+| GET /places/:tipo                       | Listar lugares por tipo |                             |{localizacao:{latitude:"",longitude:""},descricao:""
 
 ## Estrutura de uma entidade
 ```
