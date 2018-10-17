@@ -19,6 +19,7 @@ npm run dev
 * Entre em ``localhost:3000`` para uso.
 
 ## EndPoints Disponíveis
+```
 {
     nome: String,
     localizacao: {
@@ -34,6 +35,7 @@ npm run dev
         default: Date.now
     }
 }
+```
 
 | URL                                     | Description                | Return                      | Parameters                     |
 |:---------------------------------------:|:--------------------------:|:---------------------------:|:--------------------------------:|
