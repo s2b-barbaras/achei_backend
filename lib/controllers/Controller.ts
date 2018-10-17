@@ -25,7 +25,7 @@ export class PlaceController {
         })
     }
     public deletePlace (req: Request, res: Response) {           
-        Place.remove({ _id: req.params.contactId }, (err) => {
+        Place.remove({ _id: req.params.placeId }, (err) => {
             if(err){
                 res.send(err);
             }
@@ -33,28 +33,28 @@ export class PlaceController {
         });
     }
     public getPlaceById (req: Request, res: Response) {           
-        Place.findById(req.params.placeId, (err, contact) => {
+        Place.findById(req.params.placeId, (err, place) => {
             if(err){
                 res.send(err);
             }
-            res.json(contact);
+            res.json(place);
         });
     }
     public updatePlace (req: Request, res: Response) {           
-        Place.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, contact) => {
+        Place.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, place) => {
             if(err){
                 res.send(err);
             }
-            res.json(contact);
+            res.json(place);
         });
     }
     public savePlace (req: Request, res: Response) {                
         let newPlace = new Place(req.body);
-        newPlace.save((err, contact) => {
+        newPlace.save((err, place) => {
             if(err){
                 res.send(err);
             }    
-            res.json(contact);
+            res.json(place);
         });
     }
     
