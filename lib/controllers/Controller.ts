@@ -41,7 +41,7 @@ export class PlaceController {
         });
     }
     public updatePlace (req: Request, res: Response) {           
-        Place.findOneAndUpdate({ _id: req.params.contactId }, req.body, { upsert: true }, (err, place) => {
+        Place.findOneAndUpdate({ _id: req.params.placeId }, req.body, { upsert: true }, (err, place) => {
             if(err){
                 res.send(err);
             }
