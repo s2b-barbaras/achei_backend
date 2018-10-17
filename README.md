@@ -18,34 +18,6 @@ npm run dev
 ```
 * Entre em ``localhost:3000`` para uso.
 
-## EndPoints Disponíveis
-```
-{
-    nome: String,
-    localizacao: {
-        latitude: Number,
-        longitude: Number
-    },
-    descricao: String,
-    tipo: String,
-    camposDinamicos: [ Schema.Types.Mixed ],
-    keywords: [ String ],
-    created_date: {
-        type: Date,
-        default: Date.now
-    }
-}
-```
-
-| URL                                     | Description                |    Parameters               |
-|:---------------------------------------:|:--------------------------:|:---------------------------:|
-| GET /places | Buscar todas localidades  |                            |
-| GET /places/:tipo                       | Listar lugares por tipo    | {tipo: tipoParam}           |
-| GET /places/:id                         | Detalhamento de localidade | { _id: req.params.placeId }  |
-| POST /place                             | Salvar localidade          | new Place(req.body)          |
-| DELETE /place/:id                       | Deletar localidade         | { _id: req.params.placeId }   |
-| PUT /place                              | Atualizar localidade       |   { _id: req.params.contactId }|
-
 ## Estrutura de uma localidade
 ```
 {
@@ -63,6 +35,19 @@ npm run dev
   }
 }
 ```
+
+## EndPoints Disponíveis
+
+| URL                                     | Description                |    Parameters               |
+|:---------------------------------------:|:--------------------------:|:---------------------------:|
+| GET /places | Buscar todas localidades  |                            |
+| GET /places/:tipo                       | Listar lugares por tipo    | {tipo: tipoParam}           |
+| GET /places/:id                         | Detalhamento de localidade | { _id: req.params.placeId }  |
+| POST /place                             | Salvar localidade          | new Place(req.body)          |
+| DELETE /place/:id                       | Deletar localidade         | { _id: req.params.placeId }   |
+| PUT /place                              | Atualizar localidade       |   { _id: req.params.contactId }|
+
+
 ## Melhorias
 
 - Expandir para outros domínios de utilidade (cinemas, postos de gasolina, etc);
