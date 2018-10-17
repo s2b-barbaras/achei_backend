@@ -39,7 +39,7 @@ npm run dev
 
 | URL                                     | Description                | Return                      | Parameters                     |
 |:---------------------------------------:|:--------------------------:|:---------------------------:|:--------------------------------:|
-| GET /places | Buscar todas localidades  |                            |  |{nome:"",localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" } |
+| GET /places | Buscar todas localidades  |                            |                             | {nome:"",localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" } |
 | GET /places/:tipo                       | Listar lugares por tipo    |{localizacao:{latitude:"",longitude:""},descricao:""} | {tipo: tipoParam}  
 | GET /places/:id                         | Detalhamento de localidade |                             | { _id: req.params.placeId }  |
 | POST /place                             | Salvar localidade          |                             | new Place(req.body)          |
