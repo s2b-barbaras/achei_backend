@@ -19,15 +19,32 @@ npm run dev
 * Entre em ``localhost:3000`` para uso.
 
 ## EndPoints Disponíveis
+```
+{
+    nome: String,
+    localizacao: {
+        latitude: Number,
+        longitude: Number
+    },
+    descricao: String,
+    tipo: String,
+    camposDinamicos: [ Schema.Types.Mixed ],
+    keywords: [ String ],
+    created_date: {
+        type: Date,
+        default: Date.now
+    }
+}
+```
 
-| URL                                     | Description                | Return                      | Parameters                     |
-|:---------------------------------------:|:--------------------------:|:---------------------------:|:--------------------------------:|
-| GET /places | Buscar todas localidades  |                            | {localizacao: {latitude: "",longitude:""}, descricao: "", tipo: "" }|
-| GET /places/:tipo                       | Listar lugares por tipo    |                             |{localizacao:{latitude:"",longitude:""},descricao:""}
-| GET /places/:id                         | Detalhamento de localidade |                             |
-| POST /place                             | Salvar localidade          |                             |
-| DELETE /place/:id                       | Deletar localidade         |                             |
-| PUT /entidade                           | Atualizar localidade       |                             |
+| URL                                     | Description                |    Parameters               |
+|:---------------------------------------:|:--------------------------:|:---------------------------:|
+| GET /places | Buscar todas localidades  |                            |
+| GET /places/:tipo                       | Listar lugares por tipo    | {tipo: tipoParam}           |
+| GET /places/:id                         | Detalhamento de localidade | { _id: req.params.placeId }  |
+| POST /place                             | Salvar localidade          | new Place(req.body)          |
+| DELETE /place/:id                       | Deletar localidade         | { _id: req.params.placeId }   |
+| PUT /place                              | Atualizar localidade       |   { _id: req.params.contactId }|
 
 ## Estrutura de uma localidade
 ```
@@ -54,11 +71,19 @@ npm run dev
 - Adicionar campos com descrições dos lugares no modal detalhes.
 ## Licença
 Esse projeto foi licenciado sob a licença do MIT - veja [aqui](https://github.com/s2b-barbaras/achei_backend/blob/master/LICENSE) para mais detalhes.
-## Contato
-![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=275&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
-#### Bárbara Anger 
-Desenvolvedora web. Entre em contato:
-- [facebook](fb.com/BarbaraAngerr)
-- [instagram](instagram.com/barbaraangerr)
-- Skype: Barbara Anger
-- E-mail: [barbaraanger@hotmail.com](barbaraanger@hotmail.com)
+
+## Autoras
+
+* *Bárbara Anger* -  [GitHub](https://github.com/BarbaraAnger)
+  
+<a>
+  <img 
+  alt="Imagem da Autora Bárbara Anger" src="https://avatars3.githubusercontent.com/u/28331915?s=400&v=4" width="100">
+</a>
+
+* *Bárbara Becker da Rosa* -  [GitHub](https://github.com/barbbecker)
+
+<a>
+  <img 
+  alt="Imagem da Autora Bárbara Becker" src="https://avatars1.githubusercontent.com/u/39573350?s=400&u=3a24cbbb390e39b0eaab3c8278124a8b8ee252ae&v=4" width="100">
+</a>
