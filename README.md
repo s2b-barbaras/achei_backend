@@ -1,13 +1,13 @@
 # Achei - BackEnd
 Aplicação com o intuito de informar locais de diferentes utilidades em Porto Alegre com a finalidade de auxiliar àqueles que necessitam de determinado serviço, feita para o projeto do S2B.
 ## Recursos
-- NodeJS
+- [NodeJS](https://nodejs.org/en/)
   * TypeScript
   * NPM
-- MongoDB
-- Json
-- Datapoa
-- GitHub
+- [MongoDB](https://www.mongodb.com/)
+- [Json](https://www.json.org/)
+- [Datapoa](http://datapoa.com.br/apps)
+- [GitHub](https://github.com/)
   * Kanban
   * Versionamento
 
@@ -52,10 +52,11 @@ npm run dev
 - Limitar a quantidade que vem da lista, através de um parâmetro de raio de localização;
 - Rotas e Direções;
 - Adicionar campos com descrições dos lugares no modal detalhes.
-
+## Licença
+Esse projeto foi licenciado sob a licença do MIT - veja [aqui](https://github.com/s2b-barbaras/achei_backend/blob/master/LICENSE) para mais detalhes.
 ## Contato
-![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=400&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
-#### Bárbara Anger
+![Bárbara Anger](https://avatars0.githubusercontent.com/u/28331915?s=275&u=860804e9a8d3697f9cead7e446bc10a5b938266d&v=4)
+#### Bárbara Anger 
 Desenvolvedora web. Entre em contato:
 - [facebook](fb.com/BarbaraAngerr)
 - [instagram](instagram.com/barbaraangerr)
