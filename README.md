@@ -2,8 +2,8 @@
 Aplicação com o intuito de informar locais de diferentes utilidades em Porto Alegre com a finalidade de auxiliar àqueles que necessitam de determinado serviço, feita para o projeto do S2B.
 ## Recursos
 - [NodeJS](https://nodejs.org/en/)
-  * TypeScript
-  * NPM
+  * [TypeScript](https://www.typescriptlang.org/)
+  * [NPM](http://npmjs.com)
 - [MongoDB](https://www.mongodb.com/)
 - [Json](https://www.json.org/)
 - [Datapoa](http://datapoa.com.br/apps)
